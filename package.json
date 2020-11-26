@@ -3,7 +3,15 @@
   "description": "Yarn Workspaces basic monorepo management without Lerna (for coding examples)",
   "private": true,
   "workspaces": [
-    "app",
-    "my-lib"
-  ]
+    "packages/*"
+  ],
+  "dependencies": {
+    "bs-platform": "8.4.0-dev.3",
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "install": "lerna link",
+    "build": "lerna run build --concurrency 1 --stream",
+    "build:app": "cd packages/app && yarn build"
+  }
 }

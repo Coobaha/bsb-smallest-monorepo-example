@@ -1,5 +1,5 @@
 {
-  "name": "my-lib",
+  "name": "@myorg/my-lib",
   "version": "0.1.0",
   "scripts": {
     "build": "bsb -make-world",
@@ -11,7 +11,8 @@
   ],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "bs-platform": "^8.3.1"
+  "dependencies": {
+    "bs-platform": "8.4.0-dev.3",
+    "@myorg/my-shared-dev-lib": "*"
   }
 }

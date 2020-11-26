@@ -1,16 +1,22 @@
 {
-  "name": "my-lib",
+  "name": "@myorg/my-lib",
   "version": "0.1.0",
-  "sources": {
+  "sources": [{
     "dir": "src",
     "subdirs": true
-  },
+  },{
+    "dir": "dev",
+    "subdirs": true,
+    "type": "dev"
+  }
+  ],
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": [],
+  "bs-dev-dependencies": ["@myorg/my-shared-dev-lib"],
+  "pinned-dependencies": ["@myorg/my-shared-dev-lib"],
   "warnings": {
     "error": "+101"
   },
