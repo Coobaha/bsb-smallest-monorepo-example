@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "bs-platform": "8.4.0-dev.3",
-    "@myorg/my-shared-dev-lib": "*"
+    "@myorg/my-shared-dev-lib": "*",
+    "bs-platform": "8.4.0-dev.4"
   }
 }

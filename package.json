@@ -11,6 +11,7 @@
   },
   "scripts": {
     "install": "lerna link",
+    "clean": "lerna run clean --stream",
     "build": "lerna run build --concurrency 1 --stream",
     "build:app": "cd packages/app && yarn build"
   }
