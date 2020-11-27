@@ -86,7 +86,7 @@ jobs:
         run: yarn build:app
 
   buildAllMac:
-    name: Build packages/app only on mac
+    name: Build via lerna run on mac
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
