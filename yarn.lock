@@ -1200,10 +1200,10 @@ braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-bs-platform@8.4.0-dev.3:
-  version "8.4.0-dev.3"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.4.0-dev.3.tgz#f984399bd8a166bcff370bae52d6c16dae20a9cf"
-  integrity sha512-b05iPtL0dS49nvN7Ocks3NPnEE+ZGUJz9se/gaRT3c+8fAncLzebgwqY6g2jIFYEcr4HQ6x5uu1j+QlMijBxGw==
+bs-platform@8.4.0:
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.4.0.tgz#abf4cfa260fa3b163a0f033c26adf8d5ed185b8d"
+  integrity sha512-00LoUWcwrtA35kQSOCD19DK55eZSggWNxVyoz1CsDhkzTh/+1hP8EQx3b+Awl0dfKnQtY5oZFYel0C/tcV7kPw==
 
 btoa-lite@^1.0.0:
   version "1.0.0"

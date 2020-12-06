@@ -61,7 +61,6 @@ jobs:
         run: yarn build:app
 
 
-
   buildAppMac:
     name: Build packages/app only on mac
     runs-on: macos-latest
@@ -108,3 +107,30 @@ jobs:
       - name: Build
         run: yarn build
 
+  buildAppParallel:
+    name: Build packages in parallel FAILS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Restore yarn .cache
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn--${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies
+        run: yarn --production=false
+      - name: Build
+        run: |
+          yarn clean && yarn lerna run build
+          yarn clean && yarn lerna run build
+          yarn clean && yarn lerna run build
+          yarn clean && yarn lerna run build
+          yarn clean && yarn lerna run build

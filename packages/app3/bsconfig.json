@@ -1,0 +1,27 @@
+{
+  "name": "@myorg/app3",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }, {
+      "dir": "dev",
+      "subdirs": true,
+      "type": "dev"
+    }
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": ["@myorg/my-lib"],
+  "bs-dev-dependencies": ["@myorg/my-shared-dev-lib"],
+  "pinned-dependencies": ["@myorg/my-lib", "@myorg/my-shared-dev-lib"],
+  "warnings": {
+    "error": "+101"
+  },
+  "namespace": true,
+  "refmt": 3
+}

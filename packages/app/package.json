@@ -14,6 +14,6 @@
   "dependencies": {
     "@myorg/my-lib": "*",
     "@myorg/my-shared-dev-lib": "*",
-    "bs-platform": "8.4.0-dev.3"
+    "bs-platform": "8.4.0"
   }
 }

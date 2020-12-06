@@ -12,6 +12,7 @@
     "install": "lerna link",
     "clean": "lerna run clean --stream",
     "build": "lerna run build --concurrency 1 --stream",
+    "build:parallel": "yarn clean && lerna run build",
     "build:app": "cd packages/app && yarn build"
   }
 }
