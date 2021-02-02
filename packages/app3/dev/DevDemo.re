@@ -1,1 +1,1 @@
-DevLib.print("Hello, BuckleScript and Reason!");
+MyorgMySharedDevLib.DevLib.print("Hello, BuckleScript and Reason!");

@@ -1,1 +1,1 @@
-MyLib.print("Hello, BuckleScript and Reason!");
+MyorgMyLib.MyLib.print("Hello, BuckleScript and Reason!");
